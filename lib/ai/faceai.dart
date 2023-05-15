@@ -1,8 +1,8 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:moodai/painters/face_detector_painter.dart';
+import 'package:moodai/painters/detector.dart';
 import 'package:google_mlkit_face_detection/google_mlkit_face_detection.dart';
-import '../camera/camera_view.dart';
+import '../camera/camera.dart';
 
 
 class FaceDetectorView extends StatefulWidget {
