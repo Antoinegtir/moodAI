@@ -71,3 +71,32 @@ Gardez à l'esprit que toutes l'interface graphique de l'application et les widg
 
 Tout ce qui est donc au dessus de `Widget build(BuildContext context){}` servira pour la partie arrière plan de l'application, dans l'exemple de `main.dart` proposé par flutter, 
 `void initState()`, tu devras la developper pour récupérer les valeurs de l'api et qui nous fournira des données météorologique, s'elle ci devra etre placer au dessus de `initState`.
+
+## Étape 1
+
+Le projet se decompose en 3 importantes parties, la premiere est la creation du fichier `camera`
+dans lequel tu créera un fichier te permettant de pouvoir appeler la caméra de ton télephone, en important le package `camera`, en lisant la documentation de l'implémentation du package camera, tu sera libre la crée ta camera personnalisé en modifiant le curseur de zoom, mode selfie, grand angle, les possibilités de la creation de ta camera sont infini.
+
+## Étape 2
+
+Une fois ta camera réalisé, tu vas pouvoir crée un fichier `painter` dans lequel tu vas pouvoir ajouter les points de tracking pour chaque partie du visage detectable par le package proposé soit plus de 12 points de tracking.
+
+## Étape 3
+
+Une fois ta le painting et la camera réalisé, tu vas pouvoir rassembler les 2 en appelant les 2 classes que tu as crées dans leur fichier respectif pour que la camera s'empile par dessus la couche painting afin de detecter le visage.
+
+Félicitaion tu as réaliser ton projet IA, maintenant tu peux paufiner ton interface graphique pour qu'elle te corresponde.
+
+## Bonus
+
+Afficher de maniere explicite les emotions du visage, pour cela tu peux te rendre sur le site https://teachablemachine.withgoogle.com
+
+Tu vas pouvoir commencer un projet d'image, entrainer une `Class 1` que tu appelera Happy par exemple et en allumant la camera tu vas pouvoir te filmer et prendre plusieurs photos de toi joyeux,
+
+Ensuite cree une classe Sad ou de meme tu vas te montrer triste, repete ce procéder pour toutes les emotions que tu souhaite detecter.
+
+Ensuite entraine le modele et exporte le en "Tensorflow lite". Dans ce fichier télecharger tu trouvera les labels de chaque nom de tes classe dans un fichier texte, et un fichier .tsf dans lequel tes emotions du visage sont belles et bien entrainé.
+
+Plus qu'a importer la librairie Tensorflow dans laquelle tu pourra lire le modèle entrainé au prealable et l'associé a la camera pour detecter correctemps les emotions et les afficher de la maniere te souhait selon ton interface graphique dans un widget `Text`
+
+PS: Le package tensorflow ne fonctionne uniquement que pour les télephones iOS et Android, la version web et desktop ne sont pas encore compatibles pour associé le modele a ce que la camera recoit.
