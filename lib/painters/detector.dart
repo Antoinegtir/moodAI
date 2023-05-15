@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:moodai/painters/coordinates_translator.dart';
+import 'package:moodai/painters/coordinate.dart';
 import 'package:google_mlkit_face_detection/google_mlkit_face_detection.dart';
 
 class FaceDetectorPainter extends CustomPainter {
