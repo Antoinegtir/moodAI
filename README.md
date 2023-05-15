@@ -1,7 +1,5 @@
 # Mood AI
 
-<img src="https://fs.npstatic.com/userfiles/7687254/image/Weather-app-w810h462.jpg"></img>
-
 Au cours de ce Coding-club, tu vas apprendre a developper ta première application mobile réactive, créer son interface graphique, comprendre comment fonctionne une intelligence artificielle et ses enjeux de demain.
 
 ### Qu'est-ce que Flutter ?
